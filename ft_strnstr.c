@@ -6,11 +6,13 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 19:09:33 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/10/30 19:09:42 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/02 16:10:28 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *strnstr(char *s1, char *s2, int length)
+#include "libft.h"
+
+char		*strnstr(const char *big, const char *little, size_t len)
 {
 	
 }

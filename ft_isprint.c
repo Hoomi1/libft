@@ -6,7 +6,7 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 16:10:41 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/10/30 18:03:01 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/02 15:59:26 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,3 @@ int		ft_isprint(int ch)
 		return (1);
 	return (0);
 }
-
-/*int		main(void)
-{
-	int i;
-
-	i = 0;
-	while (i <= 126)
-	{
-		printf("%c", isprint);
-		i++;
-	}
-	return (0);
-}*/

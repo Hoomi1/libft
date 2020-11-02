@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/30 16:50:01 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/02 15:59:43 by cyuuki           ###   ########.fr       */
+/*   Created: 2020/11/02 16:25:44 by cyuuki            #+#    #+#             */
+/*   Updated: 2020/11/02 17:16:29 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_toupper(int ch)
+int		ft_strncmp(const char *string1, const char *string2, size_t num)
 {
-	if (ch >= 'a' && ch <= 'z')
+	while ((*string1 == *string2) && *string1 && num)
 	{
-		return (ch - 32);
+		string1++;
+		string2++;
+		num--;
 	}
-	return (ch);
+	if (num == 0)
+		return (0);
+	else
+	{
+		return (*string1 - *string2);
+	}
 }
