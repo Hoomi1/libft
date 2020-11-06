@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/06 17:16:16 by cyuuki            #+#    #+#             */
+/*   Updated: 2020/11/06 17:16:58 by cyuuki           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void        *ft_memset(void *dest, int c, size_t n)
+void		*ft_memset(void *dest, int c, size_t n)
 {
-	int i;
-	char *src;
+	int		i;
+	char	*src;
 
 	src = dest;
 	i = 0;
