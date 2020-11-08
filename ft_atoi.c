@@ -6,13 +6,13 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 14:55:09 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/02 15:58:45 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/06 17:12:09 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		atoi(const char *str)
+int		ft_atoi(const char *str)
 {
 	int i;
 	int n;
