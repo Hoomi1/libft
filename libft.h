@@ -29,12 +29,14 @@ void		*ft_memcpy(void *dest, const void *src, size_t n);
 void		*ft_memmove(void *destination, const void *source, size_t n);
 void		*ft_memset(void *dest, int c, size_t n);
 char		*ft_strchr(const char *str, int ch);
+char		*ft_strdup(const char *str);
 size_t		ft_strlcat(char *dst, const char *src, size_t size);
 size_t		strlcpy(char *dst, const char *src, size_t size);
 size_t		ft_strlen(const char *str);
 int			ft_strncmp(const char *string1, const char *string2, size_t num);
 char		*ft_strnstr(const char *big, const char *little, size_t len);
 char		*ft_strrchr(const char *str, int ch);
+char		*ft_substr(char const *s, unsigned int start, size_t len);
 int			ft_tolower(int c);
 int			ft_toupper(int ch);
 
