@@ -6,7 +6,7 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 18:01:30 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/06 18:54:46 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/09 19:06:41 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void		*ft_memmove(void *destination, const void *source, size_t n);
 void		*ft_memset(void *dest, int c, size_t n);
 char		*ft_strchr(const char *str, int ch);
 char		*ft_strdup(const char *str);
+char 		*ft_strjoin(char const *s1, char const *s2);
 size_t		ft_strlcat(char *dst, const char *src, size_t size);
 size_t		strlcpy(char *dst, const char *src, size_t size);
 size_t		ft_strlen(const char *str);

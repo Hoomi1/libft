@@ -6,7 +6,7 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/06 19:57:16 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/06 20:52:22 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/09 17:05:52 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,11 @@ void		*ft_memmove(void *destination, const void *source, size_t n)
 	src = (char *)source;
 	dest = (char *)destination;
 	if (src > dest)
-		while (n)
+		while (n--)
 		{
 			*dest = *src;
 			dest++;
 			src++;
-			n--;
 		}
 	else
 	{
