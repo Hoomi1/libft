@@ -6,7 +6,7 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 18:00:58 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/02 18:14:49 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/10 20:14:43 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,11 @@ char		*ft_strchr(const char *str, int ch)
 			return (str2);
 		}
 		i++;
+	}
+	if (str[i] == ch)
+	{
+		str2 = (char *)&str[i];
+		return (str2);
 	}
 	return (NULL);
 }

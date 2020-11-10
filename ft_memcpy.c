@@ -6,7 +6,7 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/06 17:12:48 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/06 17:12:50 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/10 18:11:32 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,15 @@ void		*ft_memcpy(void *dest, const void *src, size_t n)
 	size_t		i;
 
 	i = 0;
-	s = src;
-	d = dest;
+	s = (char *)src;
+	d = (char *)dest;
+	if (!dest && !src)
+		return (NULL);
 	while (n)
 	{
 		d[i] = s[i];
 		i++;
 		n--;
 	}
-	return (dest);
+	return ((char *)dest);
 }
