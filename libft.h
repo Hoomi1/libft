@@ -22,12 +22,17 @@ int			ft_isalpha(int c);
 int			ft_isascii(int ch);
 int			ft_isdigit(int ch);
 int			ft_isprint(int ch);
+char		*ft_itoa(int n);
 void		*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void		*ft_memchr(const void *array, int c, size_t n);
 int			ft_memcmp(const void *buf1, const void *buf2, size_t count);
 void		*ft_memcpy(void *dest, const void *src, size_t n);
 void		*ft_memmove(void *destination, const void *source, size_t n);
 void		*ft_memset(void *dest, int c, size_t n);
+void		ft_putchar_fd(char c, int fd);
+void		ft_putendl_fd(char *s, int fd);
+void		ft_putnbr_fd(int n, int fd);
+void		ft_putstr_fd(char *s, int fd);
 char		*ft_strchr(const char *str, int ch);
 char		*ft_strdup(const char *str);
 char 		*ft_strjoin(char const *s1, char const *s2);
@@ -42,4 +47,3 @@ int			ft_tolower(int c);
 int			ft_toupper(int ch);
 
 #endif
-
