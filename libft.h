@@ -17,6 +17,7 @@
 
 int			ft_atoi(const char *str);
 void		ft_bzero(void *s, size_t n);
+void		*ft_calloc(size_t number, size_t size);
 int			ft_isalnum(int c);
 int			ft_isalpha(int c);
 int			ft_isascii(int ch);
@@ -37,8 +38,9 @@ char		*ft_strchr(const char *str, int ch);
 char		*ft_strdup(const char *str);
 char 		*ft_strjoin(char const *s1, char const *s2);
 size_t		ft_strlcat(char *dst, const char *src, size_t size);
-size_t		strlcpy(char *dst, const char *src, size_t size);
+size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 size_t		ft_strlen(const char *str);
+char		*ft_strmapi(char const *s, char(*f)(unsigned int, char));
 int			ft_strncmp(const char *string1, const char *string2, size_t num);
 char		*ft_strnstr(const char *big, const char *little, size_t len);
 char		*ft_strrchr(const char *str, int ch);
