@@ -6,7 +6,7 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 16:25:44 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/06 18:53:50 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/12 19:27:45 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,14 @@
 
 int		ft_strncmp(const char *string1, const char *string2, size_t num)
 {
-	while ((*string1 == *string2) && *string1 && num)
+	size_t	i;
+
+	i = 0;
+	while ((string1[i] || string2[i]) && i < num)
 	{
-		string1++;
-		string2++;
-		num--;
+		if (string1[i] != string2[i])
+			return ((unsigned char)string1[i] - (unsigned char)string2[i]);
+		i++;
 	}
-	if (num == 0)
-		return (0);
-	else
-	{
-		return (*string1 - *string2);
-	}
+	return (0);
 }

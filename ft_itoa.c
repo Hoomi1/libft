@@ -1,17 +1,21 @@
-#include "libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/12 16:49:27 by cyuuki            #+#    #+#             */
+/*   Updated: 2020/11/12 17:47:36 by cyuuki           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-/*int		condition(int n)
-{
-	if (n == -2147483648)
-	write(1, &n, 11);
-	if ( n == 2147483647)
-	write(1, &n, 10);
-}*/
+#include "libft.h"
 
 int		check(int n)
 {
-	int i;
-	
+	int	i;
+
 	i = 0;
 	while (n != 0)
 	{
@@ -34,12 +38,12 @@ int		equals(int c)
 char		*ft_itoa(int n)
 {
 	size_t				l;
-	unsigned char		*str;
+	char				*str;
 	long int			number;
 
 	number = n;
-	l = equals(n) + check(number);
-	if (!(str = (char *)malloc(sizeof(char) * l)))
+	l = (equals(n) + check(number));
+	if (!(str = (char *)ft_calloc(l, 1)))
 		return (NULL);
 	if (number == 0)
 		*str = '0';
@@ -48,8 +52,6 @@ char		*ft_itoa(int n)
 		*str = '-';
 		number *= -1;
 	}
-	/* if(number == -2147483648 || number == 2147483647)
-	   return (condition(number));*/
 	while (number)
 	{
 		l--;

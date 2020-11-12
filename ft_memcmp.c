@@ -6,7 +6,7 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/09 17:04:37 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/10 19:53:27 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/12 17:40:34 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,11 @@ int		ft_memcmp(const void *buf1, const void *buf2, size_t count)
 	i = 0;
 	str1 = (unsigned char *)buf1;
 	str2 = (unsigned char *)buf2;
-	while (*(str1 + i) == *(str2 + i) && count)
+	while (i < count)
 	{
-		count--;
+		if ((str1[i] != str2[i]))
+			return (str1[i] - str2[i]);
 		i++;
 	}
-	if (count == 0)
-		return (0);
-	else
-	{
-		return (*(str1 + i) - *(str2 + i));
-	}
+	return (0);
 }

@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/12 16:51:35 by cyuuki            #+#    #+#             */
+/*   Updated: 2020/11/12 20:07:40 by cyuuki           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int power(int n)
+int		power(int n)
 {
 	size_t p = 1;
 	int i = 1;
@@ -13,7 +25,7 @@ int power(int n)
 	return (p);
 }
 
-void ft_putnbr_fd(int n, int fd)
+void		ft_putnbr_fd(int n, int fd)
 {
 	size_t i;
 	int a;
