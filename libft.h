@@ -6,7 +6,7 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 18:01:30 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/09 19:06:41 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/16 19:31:41 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,13 @@
 #define LIBFT_H
 #include <stdlib.h>
 #include <unistd.h>
+
+typedef struct s_list
+{
+	void				*content;
+	struct s_list		*next;
+}						t_list;
+
 
 int			ft_atoi(const char *str);
 void		ft_bzero(void *s, size_t n);
@@ -24,6 +31,7 @@ int			ft_isascii(int ch);
 int			ft_isdigit(int ch);
 int			ft_isprint(int ch);
 char		*ft_itoa(int n);
+t_list		*ft_lstnew(void *content);
 void		*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void		*ft_memchr(const void *array, int c, size_t n);
 int			ft_memcmp(const void *buf1, const void *buf2, size_t count);
