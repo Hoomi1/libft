@@ -6,7 +6,7 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/12 16:51:16 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/12 17:09:03 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/16 18:02:46 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ void		ft_putendl_fd(char *s, int fd)
 			write(fd, &s[i], 1);
 			i++;
 		}
-		ft_putchar_fd('\n', 2);
+		ft_putchar_fd('\n', fd);
 	}
 }

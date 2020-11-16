@@ -6,7 +6,7 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/09 19:05:54 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/12 20:49:48 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/16 17:29:50 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,6 @@ char		*ft_strjoin(char const *s1, char const *s2)
 		s2++;
 	}
 	*str = '\0';
+	str -= len;
 	return (str);
 }

@@ -6,7 +6,7 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 18:43:57 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/12 19:10:31 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/16 18:05:30 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t size)
 		dst[i] = src[i];
 		i++;
 	}
-
 	dst[i] = '\0';
 	return (ft_strlen(src));
 }
