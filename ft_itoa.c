@@ -6,13 +6,13 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/12 16:49:27 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/16 18:16:54 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/18 17:32:51 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_check(int n)
+static	int		ft_check(int n)
 {
 	int	i;
 
@@ -27,7 +27,7 @@ int		ft_check(int n)
 	return (i);
 }
 
-int		ft_equals(int c)
+static	int		ft_equals(int c)
 {
 	if (c > 0)
 		return (1);
@@ -35,7 +35,7 @@ int		ft_equals(int c)
 		return (2);
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	size_t				l;
 	char				*str;

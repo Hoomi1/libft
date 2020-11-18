@@ -6,12 +6,11 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/09 17:07:35 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/12 20:20:50 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/18 17:34:10 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char		*ft_substr(char const *s, unsigned int start, size_t len)
 {

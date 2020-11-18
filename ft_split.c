@@ -6,13 +6,13 @@
 /*   By: cyuuki <cyuuki@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 17:01:08 by cyuuki            #+#    #+#             */
-/*   Updated: 2020/11/16 20:18:53 by cyuuki           ###   ########.fr       */
+/*   Updated: 2020/11/18 17:31:36 by cyuuki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_ler(const char *str, char c)
+static	int		ft_ler(const char *str, char c)
 {
 	int	i;
 	int	j;
@@ -31,7 +31,7 @@ int			ft_ler(const char *str, char c)
 	return (j);
 }
 
-size_t		ft_wordlen(const char *s, char c)
+static	size_t	ft_wordlen(const char *s, char c)
 {
 	size_t	i;
 
@@ -41,7 +41,7 @@ size_t		ft_wordlen(const char *s, char c)
 	return (i);
 }
 
-char		**ft_deletefree(char **s, int i)
+static	char	**ft_deletefree(char **s, int i)
 {
 	while (i > 0)
 		free(s[i--]);
@@ -49,7 +49,7 @@ char		**ft_deletefree(char **s, int i)
 	return (NULL);
 }
 
-char		**ft_split(char const *s, char c)
+char			**ft_split(char const *s, char c)
 {
 	size_t	i;
 	size_t	j;
